@@ -8,8 +8,8 @@ export GOROOT=$(readlink -nf /var/vcap/packages/golang)
 export PATH=$GOROOT/bin:$PATH
 export GOCACHE="${GOROOT}/cache"
 
-pushd ${BOSH_INSTALL_TARGET}/src/github.com/SUSE/eirini-ssh
-  go build -o ${BOSH_INSTALL_TARGET}/bin/eirini-ssh-extension cmd/extension/main.go
+pushd ${BOSH_INSTALL_TARGET}/src/github.com/SUSE/eirini-ssh/cmd/extension
+  go build -o ${BOSH_INSTALL_TARGET}/bin/eirini-ssh-extension
 popd
 
 # clean up source artifacts
