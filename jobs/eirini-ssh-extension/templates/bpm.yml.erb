@@ -7,7 +7,7 @@ processes:
       KUBERNETES_SERVICE_PORT: "<%= p("eirini-ssh-extension.kube_service_port") %>"
       OPERATOR_WEBHOOK_HOST: "<%= p("eirini-ssh-extension.operator_webhook_host") %>"
       OPERATOR_WEBHOOK_PORT: "<%= p("eirini-ssh-extension.operator_webhook_port") %>"
-      NAMESPACE: "<%= p("eirini-ssh-extension.namespace") %>"
+      EIRINI_EXTENSION_NAMESPACE: "<%= p("eirini-ssh-extension.namespace") %>"
       OPERATOR_SERVICE_NAME: "<%= p("eirini-ssh-extension.operator_webhook_servicename") %>"
       OPERATOR_WEBHOOK_NAMESPACE: "<%= p("eirini-ssh-extension.operator_webhook_namespace") %>"
     <% if properties.opi&.k8s&.host_url.nil? %>
