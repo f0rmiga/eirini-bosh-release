@@ -19,6 +19,8 @@ properties:
     description: "The port to which the ssh-proxy should listen for connections"
   eirini-ssh-proxy.host_key:
     description: "The SSH host key of the ssh-proxy"
+  eirini-ssh-proxy.kube_namespace:
+    description: "Kubernetes namespace of the SSH auth secrets"
   eirini-ssh-proxy.kube_service_host:
     description: "Kubernetes in cluster host"
   eirini-ssh-proxy.kube_service_port:
