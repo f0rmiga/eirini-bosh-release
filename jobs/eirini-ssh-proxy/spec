@@ -25,6 +25,9 @@ properties:
     description: "Kubernetes in cluster host"
   eirini-ssh-proxy.kube_service_port:
     description: "Kubernetes in cluster Port"
+  eirini-ssh-proxy.sshd_port:
+    description: "The port where the ssh proxy is connecting to"
+    default: "2222"
   eirini-ssh-proxy.ssl.skip_cert_verify:
     description: "Skip UAA SSL certificate verification"
     default: false
