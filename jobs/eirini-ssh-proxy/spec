@@ -5,6 +5,7 @@ templates:
   bpm.yml.erb: config/bpm.yml
   eirini-ssh-proxy.json.erb: config/eirini-ssh-proxy.json
   uaa_ca.crt.erb: config/certs/uaa/ca.crt
+  cc_api_ca_cert.crt.erb: config/certs/cc/cc_api_ca_cert.crt
 
 packages:
   - eirini-ssh-proxy
@@ -12,6 +13,8 @@ packages:
 properties:
   eirini-ssh-proxy.api_url:
     description: "The CloudFoundry API service url"
+  eirini-ssh-proxy.cc.ca_cert:
+    description: "CA certificate to talk to the Cloud Controller"
   eirini-ssh-proxy.port:
     description: "The port to which the ssh-proxy should listen for connections"
   eirini-ssh-proxy.host_key:

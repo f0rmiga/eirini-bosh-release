@@ -16,6 +16,10 @@
       config[:uaa_ca_cert] = "/var/vcap/jobs/eirini-ssh-proxy/config/certs/uaa/ca.crt"
     end
 
+    if_p("eirini-ssh-proxy.cc.ca_cert") do |value|
+      config[:cc_api_ca_cert] = "/var/vcap/jobs/eirini-ssh-proxy/config/certs/cc/cc_api_ca_cert.crt"
+    end
+
     require 'json'
     config.to_json
 %>
